@@ -126,6 +126,7 @@
                 android:layout_height="wrap_content"
                 android:entries="@array/academic_background_array" />
             <TextView
+                android:id="@+id/finalYearTV"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/finalYear"
@@ -139,6 +140,7 @@
                 android:visibility="gone" />
 
             <TextView
+                android:id="@+id/institutionTV"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/institution"
@@ -152,6 +154,7 @@
                 android:visibility="gone" />
 
             <TextView
+                android:id="@+id/monographTitleTV"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/monographTitle"
@@ -165,6 +168,7 @@
                 android:visibility="gone" />
 
             <TextView
+                android:id="@+id/adviserTV"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/adviser"
