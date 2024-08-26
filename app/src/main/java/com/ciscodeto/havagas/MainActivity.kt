@@ -78,7 +78,7 @@ class MainActivity : AppCompatActivity() {
                 ${if (institution.isEmpty()) "" else "Instituição: $institution"}
                 ${if (monographTitle.isEmpty()) "" else "Título da Monografia: $monographTitle"}
                 ${if (adviser.isEmpty()) "" else "Orientador: $adviser"}
-                ${ if (interest.isEmpty()) "" else "Vagas de Interesse: $interest"}
+                ${if (interest.isEmpty()) "" else "Vagas de Interesse: $interest"}
             """.trimIndent()
 
             AlertDialog.Builder(this)
