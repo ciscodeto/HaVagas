@@ -1,6 +1,7 @@
 package com.ciscodeto.havagas
 
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
 import android.widget.CheckBox
 import android.widget.EditText
@@ -20,6 +21,10 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
 
         setContentView(amb.root)
+
+        amb.addCellPhoneCB.setOnCheckedChangeListener { _, isChecked ->
+            amb.cellPhoneET.visibility = if (isChecked) View.VISIBLE else View.GONE
+        }
 
         setContentView(R.layout.activity_main)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
