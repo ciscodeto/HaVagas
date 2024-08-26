@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">HaVagas</string>
+    <string name="email">Email</string>
+    <string name="name">Nome</string>
+    <string name="title">Há Vagas</string>
+    <string name="phone">Telefone</string>
+    <string name="joinEmailList">Deseja receber atualizações por email?</string>
 </resources>
