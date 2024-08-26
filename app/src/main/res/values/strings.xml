@@ -4,7 +4,12 @@
     <string name="name">Nome</string>
     <string name="title">Há Vagas</string>
     <string name="phone">Telefone</string>
+    <string name="cellPhone">Telefone Celular</string>
     <string name="joinEmailList">Deseja receber atualizações por email?</string>
     <string name="business">Comercial</string>
     <string name="home">Residencial</string>
+    <string name="birthDate">Data de Nascimento</string>
+    <string name="addCellPhone">Adicionar Telefone Celular</string>
+    <string name="clear">Limpar</string>
+    <string name="save">Salvar</string>
 </resources>

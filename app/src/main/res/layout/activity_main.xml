@@ -19,68 +19,130 @@
             android:layout_height="wrap_content"
             android:text="@string/title"
             android:textSize="24sp"
-            android:textColor="@color/white"/>
+            android:textColor="@color/primary"/>
     </Toolbar>
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="8dp"
         app:layout_constraintTop_toBottomOf="@id/toolbar"
         app:layout_constraintStart_toStartOf="parent">
-        <TextView
-            android:id="@+id/nameTV"
-            android:text="@string/name"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
-        <EditText
-            android:id="@+id/nameET"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/name"
-            android:inputType="textPersonName"/>
-        <TextView
-            android:id="@+id/emailTV"
-            android:text="@string/email"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
-        <EditText
-            android:id="@+id/emailET"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/email"
-            android:inputType="textEmailAddress"/>
-        <CheckBox
-            android:id="@+id/joinEmailCB"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/joinEmailList" />
-        <TextView
-            android:id="@+id/phoneTV"
-            android:text="@string/phone"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
-        <EditText
-            android:id="@+id/phoneET"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/phone"
-            android:inputType="phone"/>
-        <RadioGroup
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <RadioButton
-                android:id="@+id/businessRB"
+            android:orientation="vertical"
+            android:padding="8dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+            <TextView
+                android:id="@+id/nameTV"
+                android:text="@string/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/nameET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/name"
+                android:inputType="textPersonName"/>
+            <TextView
+                android:id="@+id/emailTV"
+                android:text="@string/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/emailET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"/>
+            <CheckBox
+                android:id="@+id/joinEmailCB"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/business"/>
-            <RadioButton
-                android:id="@+id/homeRB"
-                android:layout_width="wrap_content"
+                android:text="@string/joinEmailList" />
+            <TextView
+                android:id="@+id/phoneTV"
+                android:text="@string/phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/phoneET"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/home"/>
-        </RadioGroup>
-    </LinearLayout>
+                android:hint="@string/phone"
+                android:inputType="phone"/>
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/businessRB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/business"/>
+                <RadioButton
+                    android:id="@+id/homeRB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/home"/>
+            </RadioGroup>
+            <CheckBox
+                android:id="@+id/addCellPhoneCB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/addCellPhone"/>
+            <TextView
+                android:id="@+id/cellPhoneTV"
+                android:text="@string/cellPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+            <EditText
+                android:id="@+id/cellPhoneET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/cellPhone"
+                android:inputType="phone"
+                android:visibility="gone"/>
+            <Spinner
+                android:id="@+id/sexSpn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/sex_array" />
+            <TextView
+                android:id="@+id/birthDateTV"
+                android:text="@string/birthDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/birthDateET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/birthDate"
+                android:inputType="date" />
+            <LinearLayout
+                style="?android:attr/buttonBarStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <Button
+                    android:id="@+id/clearBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/clear"
+                    android:backgroundTint="@color/primary"/>
+                <Button
+                    android:id="@+id/saveBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/save"
+                    android:backgroundTint="@color/primary" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
