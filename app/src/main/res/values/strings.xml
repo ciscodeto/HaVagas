@@ -12,4 +12,9 @@
     <string name="addCellPhone">Adicionar Telefone Celular</string>
     <string name="clear">Limpar</string>
     <string name="save">Salvar</string>
+    <string name="institution">Instituição</string>
+    <string name="monographTitle">Título da Monografia</string>
+    <string name="adviser">Orientador</string>
+    <string name="interestVacancies">Vagas de Interesse</string>
+    <string name="finalYear">Ano de Conclusão</string>
 </resources>

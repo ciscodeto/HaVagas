@@ -120,6 +120,72 @@
                 android:layout_height="wrap_content"
                 android:hint="@string/birthDate"
                 android:inputType="date" />
+            <Spinner
+                android:id="@+id/academicSpn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/academic_background_array" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/finalYear"
+                android:visibility="gone" />
+            <EditText
+                android:id="@+id/finalYearET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/finalYear"
+                android:inputType="number"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/institution"
+                android:visibility="gone" />
+            <EditText
+                android:id="@+id/institutionET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/institution"
+                android:inputType="text"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/monographTitle"
+                android:visibility="gone"/>
+            <EditText
+                android:id="@+id/monographTitleET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/monographTitle"
+                android:inputType="text"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/adviser"
+                android:visibility="gone"/>
+            <EditText
+                android:id="@+id/adviserET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/adviser"
+                android:inputType="text"
+                android:visibility="gone" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/interestVacancies"/>
+            <EditText
+                android:id="@+id/interestET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/interestVacancies"/>
+
             <LinearLayout
                 style="?android:attr/buttonBarStyle"
                 android:layout_width="match_parent"
