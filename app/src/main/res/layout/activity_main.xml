@@ -66,6 +66,21 @@
             android:layout_height="wrap_content"
             android:hint="@string/phone"
             android:inputType="phone"/>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/businessRB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/business"/>
+            <RadioButton
+                android:id="@+id/homeRB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/home"/>
+        </RadioGroup>
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

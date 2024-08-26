@@ -5,4 +5,6 @@
     <string name="title">Há Vagas</string>
     <string name="phone">Telefone</string>
     <string name="joinEmailList">Deseja receber atualizações por email?</string>
+    <string name="business">Comercial</string>
+    <string name="home">Residencial</string>
 </resources>
