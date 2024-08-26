@@ -87,6 +87,26 @@ class MainActivity : AppCompatActivity() {
                 .setPositiveButton("OK", null)
                 .show()
         }
+
+        amb.clearBtn.setOnClickListener {
+            amb.nameET.text.clear()
+            amb.emailET.text.clear()
+            amb.joinEmailCB.isChecked = false
+            amb.phoneET.text.clear()
+            amb.businessRB.isChecked = false
+            amb.homeRB.isChecked = false
+            amb.addCellPhoneCB.isChecked = false
+            amb.cellPhoneET.text.clear()
+            amb.sexSpn.setSelection(0)
+            amb.birthDateET.text.clear()
+            amb.academicSpn.setSelection(0)
+            amb.finalYearET.text.clear()
+            amb.institutionET.text.clear()
+            amb.monographTitleET.text.clear()
+            amb.adviserET.text.clear()
+            amb.interestET.text.clear()
+        }
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
